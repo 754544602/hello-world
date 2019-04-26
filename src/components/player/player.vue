@@ -1,5 +1,5 @@
 <template>
-  <div class="player" v-show="playList.length>0">
+  <div class="player" v-show="playList">
     <div class="normal-player" v-show="fullScreen">
       播放器
     </div>
@@ -12,7 +12,6 @@
 
   export default {
     name: "player",
-
     computed: {
       ...mapGetters([
         'fullScreen',

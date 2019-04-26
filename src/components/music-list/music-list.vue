@@ -73,7 +73,7 @@
       },
       selectItem(item, index) {
         this.selectPlay({
-          list: this.song,
+          list: this.songs,
           index:index
         })
       },
