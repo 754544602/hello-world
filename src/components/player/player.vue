@@ -1,7 +1,7 @@
 <template>
-  <div class="player" v-show="playList">
+  <div class="player" v-show="playList.length>0">
     <div class="normal-player" v-show="fullScreen">
-      播放器
+      播放器{{playList}}
     </div>
     <div class="mini-player" v-show="fullScreen"></div>
   </div>
@@ -12,11 +12,21 @@
 
   export default {
     name: "player",
+    data(){
+      return {
+        playList:[]
+      }
+    },
     computed: {
       ...mapGetters([
         'fullScreen',
         'playList'
       ])
+    },
+    watch:{
+      playList(message){
+        console.log(message)
+      }
     }
   }
 </script>

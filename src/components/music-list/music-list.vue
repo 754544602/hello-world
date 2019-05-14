@@ -8,7 +8,7 @@
       <div class="play-wrapper" v-if="songs.length" ref="playBtn">
         <div class="play">
           <i class="icon-play">
-            <span class="text">随机播放全部</span>
+            <span class="text">随机播放全部{{playList}}</span>
           </i>
         </div>
       </div>
