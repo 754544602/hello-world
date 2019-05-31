@@ -8,7 +8,7 @@
       <div class="play-wrapper" v-if="songs.length" ref="playBtn">
         <div class="play">
           <i class="icon-play">
-            <span class="text">随机播放全部{{playList}}</span>
+            <span class="text">随机播放全部</span>
           </i>
         </div>
       </div>
@@ -31,7 +31,7 @@
   import SongList from '@/base/song-list/song-list'
   import Loading from '@/base/loading/loading'
   import {prefixStyle} from "../../common/js/dom";
-  import {mapActions} from 'vuex'
+  import {mapActions,mapGetters} from 'vuex'
   import {selectPlay} from "../../store/actions";
 
   const RESERVED_HEIGHT = 40
